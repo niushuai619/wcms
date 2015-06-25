@@ -1,0 +1,11 @@
+[ 2015-06-25T10:50:40+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wm_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wm_users` WHERE `user_login` = 'super_admin' LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `wm_role_user` [ RunTime:0.0030s ]
+SQL: SELECT `role_id` FROM wm_role_user a INNER JOIN wm_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `wm_users` SET `user_login`='super_admin',`user_pass`='9207ec0b8f5bae5328fea80986eae2c1666c6578fe7e5262',`user_nicename`='admin',`user_email`='396057259@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2015-06-25 10:50:40',`create_time`='2015-06-25 10:50:25',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '1' [ RunTime:0.0150s ]
+
