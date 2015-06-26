@@ -1,0 +1,189 @@
+[ 2015-06-26T14:48:15+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T14:48:21+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit&id=162&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T14:48:40+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wm_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wm_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wm_menu` [ RunTime:0.0020s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `wm_auth_rule` [ RunTime:0.0020s ]
+SQL: SELECT `id` FROM `wm_menu` WHERE `app` = 'Admin' AND `model` = 'Mobilegames' AND `action` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wm_menu` SET `parentid`='0',`name`='手游管理',`app`='Admin',`model`='Mobilegames',`action`='index',`data`='',`icon`='gamepad',`remark`='',`status`='1',`type`='0' WHERE `id` = 162 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wm_auth_rule` WHERE `name` = 'admin/mobilegames/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `wm_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('admin/mobilegames/index','Admin','admin_url','手游管理') [ RunTime:0.0000s ]
+
+[ 2015-06-26T14:48:41+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit&id=162&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T14:48:50+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Mobilegames&a=index&menuid=162
+ERR: Think\Controller:_lists方法不存在！
+
+[ 2015-06-26T14:49:16+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wm_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wm_users` WHERE `user_login` = 'super_admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wm_role_user` [ RunTime:0.0020s ]
+SQL: SELECT `role_id` FROM wm_role_user a INNER JOIN wm_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `wm_users` SET `user_login`='super_admin',`user_pass`='9207ec0b8f5bae5328fea80986eae2c1666c6578fe7e5262',`user_nicename`='admin',`user_email`='396057259@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2015-06-26 14:49:16',`create_time`='2015-06-25 10:50:25',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '1' [ RunTime:0.0000s ]
+
+[ 2015-06-26T14:49:25+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T14:49:28+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=add
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T14:50:08+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=add_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wm_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wm_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wm_menu` [ RunTime:0.0030s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `wm_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wm_menu` WHERE `app` = 'Admin' AND `model` = 'Mobilegames' AND `action` = 'mobile_list' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `parentid` FROM `wm_menu` WHERE `id` = 162 LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `wm_menu` (`parentid`,`name`,`app`,`model`,`action`,`data`,`icon`,`remark`,`status`,`type`) VALUES ('162','游戏列表','Admin','Mobilegames','mobile_list','','','','1','1') [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wm_auth_rule` WHERE `name` = 'admin/mobilegames/mobile_list' LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `wm_auth_rule` (`name`,`module`,`type`,`title`) VALUES ('admin/mobilegames/mobile_list','Admin','admin_url','游戏列表') [ RunTime:0.0010s ]
+
+[ 2015-06-26T14:50:08+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T14:52:02+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wm_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wm_users` WHERE `user_login` = 'super_admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wm_role_user` [ RunTime:0.0030s ]
+SQL: SELECT `role_id` FROM wm_role_user a INNER JOIN wm_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `wm_users` SET `user_login`='super_admin',`user_pass`='9207ec0b8f5bae5328fea80986eae2c1666c6578fe7e5262',`user_nicename`='admin',`user_email`='396057259@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2015-06-26 14:52:02',`create_time`='2015-06-25 10:50:25',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '1' [ RunTime:0.0000s ]
+
+[ 2015-06-26T14:59:04+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T15:00:15+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wm_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wm_users` WHERE `user_login` = 'super_admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wm_role_user` [ RunTime:0.0020s ]
+SQL: SELECT `role_id` FROM wm_role_user a INNER JOIN wm_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0000s ]
+SQL: UPDATE `wm_users` SET `user_login`='super_admin',`user_pass`='9207ec0b8f5bae5328fea80986eae2c1666c6578fe7e5262',`user_nicename`='admin',`user_email`='396057259@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2015-06-26 15:00:15',`create_time`='2015-06-25 10:50:25',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '1' [ RunTime:0.0000s ]
+
+[ 2015-06-26T15:09:47+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit&id=162&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T15:10:02+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit&id=109&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T15:10:32+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit&id=162&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T15:13:00+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T15:13:06+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=add
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T15:13:08+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T15:13:09+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=add
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T15:13:10+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T15:13:56+08:00 ] 127.0.0.1 /index.php?g=Admin&m=public&a=dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wm_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wm_users` WHERE `user_login` = 'super_admin' LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wm_role_user` [ RunTime:0.0030s ]
+SQL: SELECT `role_id` FROM wm_role_user a INNER JOIN wm_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0010s ]
+SQL: UPDATE `wm_users` SET `user_login`='super_admin',`user_pass`='9207ec0b8f5bae5328fea80986eae2c1666c6578fe7e5262',`user_nicename`='admin',`user_email`='396057259@qq.com',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='127.0.0.1',`last_login_time`='2015-06-26 15:13:56',`create_time`='2015-06-25 10:50:25',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1' WHERE `id` = '1' [ RunTime:0.0000s ]
+
+[ 2015-06-26T15:32:47+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=index&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T15:32:51+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit&id=162&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T15:32:56+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `wm_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wm_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wm_menu` [ RunTime:0.0030s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `wm_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `wm_menu` WHERE `app` = 'Admin' AND `model` = 'Mobilegames' AND `action` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wm_menu` SET `parentid`='0',`name`='手游管理',`app`='Admin',`model`='Mobilegames',`action`='index',`data`='',`icon`='gamepad',`remark`='',`status`='1',`type`='0' WHERE `id` = 162 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wm_auth_rule` WHERE `name` = 'admin/mobilegames/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wm_auth_rule` SET `name`='admin/mobilegames/index',`module`='Admin',`type`='admin_url',`title`='手游管理' WHERE `name` = 'admin/mobilegames/index' [ RunTime:0.0000s ]
+
+[ 2015-06-26T15:32:57+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit&id=162&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T15:33:02+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wm_users` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wm_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wm_menu` [ RunTime:0.0030s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `wm_auth_rule` [ RunTime:0.0030s ]
+SQL: SELECT `id` FROM `wm_menu` WHERE `app` = 'Admin' AND `model` = 'Mobilegames' AND `action` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wm_menu` SET `parentid`='0',`name`='手游管理',`app`='Admin',`model`='Mobilegames',`action`='index',`data`='',`icon`='gamepad',`remark`='',`status`='1',`type`='0' WHERE `id` = 162 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wm_auth_rule` WHERE `name` = 'admin/mobilegames/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wm_auth_rule` SET `name`='admin/mobilegames/index',`module`='Admin',`type`='admin_url',`title`='手游管理' WHERE `name` = 'admin/mobilegames/index' [ RunTime:0.0010s ]
+
+[ 2015-06-26T15:33:02+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit&id=162&menuid=100
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T15:33:05+08:00 ] 127.0.0.1 /index.php?g=Admin&m=menu&a=index
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T15:33:24+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit&id=162
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+
+[ 2015-06-26T15:33:26+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit_post
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `wm_users` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `wm_users` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `wm_menu` [ RunTime:0.0040s ]
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+SQL: SHOW COLUMNS FROM `wm_auth_rule` [ RunTime:0.0040s ]
+SQL: SELECT `id` FROM `wm_menu` WHERE `app` = 'Admin' AND `model` = 'Mobilegames' AND `action` = 'index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wm_menu` SET `parentid`='0',`name`='手游管理',`app`='Admin',`model`='Mobilegames',`action`='index',`data`='',`icon`='gamepad',`remark`='',`status`='1',`type`='0' WHERE `id` = 162 [ RunTime:0.0000s ]
+SQL: SELECT * FROM `wm_auth_rule` WHERE `name` = 'admin/mobilegames/index' LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `wm_auth_rule` SET `name`='admin/mobilegames/index',`module`='Admin',`type`='admin_url',`title`='手游管理' WHERE `name` = 'admin/mobilegames/index' [ RunTime:0.0010s ]
+
+[ 2015-06-26T15:33:26+08:00 ] 127.0.0.1 /index.php?g=Admin&m=Menu&a=edit&id=162
+NOTIC: D方法实例化没找到模型类Common\Model\AuthRuleModel
+

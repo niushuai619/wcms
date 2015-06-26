@@ -516,4 +516,10 @@ ul.tc-photos{margin: 0;}
 }
 
 
+/***************/
+.c_footer{width:100%;min-height:120px;height:100%;background:#111;text-align:center;padding-top:50px;}
+.c_footer  ul{list-style: none;display:inline-block;margin:0 auto;width:1170px;height:50px;}
+.c_footer  ul li{padding:3px 5px;display:inline-block;}
+.c_footer  ul li a{color:#fff;}
+.c_footer p{color:#fff;text-align:center;width:1170px;margin:0 auto;}
 		
